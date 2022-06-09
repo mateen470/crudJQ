@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSplash</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
     />
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="script.js"></script>
@@ -18,66 +24,74 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar bg-light">
+    <nav class="navigation navbar">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">FoodSplash</span>
+        <span class="mb-0">FoodSplash</span>
       </div>
     </nav>
-
+    <!-- TABLE OF ADDED PRODUCTS -->
+    <h1 class="addedProductsH1">Your Products</h1>
     <form id="form1">
-      <table class="table table-bordered" id="UserInfo">
-        <tr>
-          <th>Product Id.</th>
+      <div class="addedProducts">
+        <table class="table table-warning table-striped" id="UserInfo">
+          <tr>
+            <th>Product Id.</th>
 
-          <th>Product</th>
+            <th>Product</th>
 
-          <th>Qunatity</th>
-          <th>Price</th>
+            <th>Quantity</th>
+            <th>Price</th>
 
-          <th>Action</th>
-        </tr>
+            <th>Action</th>
+          </tr>
 
-        <tbody id="table_td"></tbody>
-      </table>
+          <tbody id="table_td"></tbody>
+        </table>
+      </div>
+      <!-- TABLE OF ADDED PRODUCTS END -->
+      <!-- TABLE OF ADD PRODUCTS -->
+      <div class="addProduct">
+        <h1 class="addProductH1">Add a Product</h1>
 
-      <h3>Add a Product</h3>
+        <table class="table table-warning table-striped" id="Add">
+          <tr>
+            <th>Product Id.</th>
 
-      <table class="table table-bordered" id="Add">
-        <tr>
-          <th>Product Id.</th>
+            <th>Product</th>
 
-          <th>Product</th>
+            <th>Quantity(kg.)</th>
+            <th>Price(Rs.)</th>
+          </tr>
 
-          <th>Qunatity</th>
-          <th>Price</th>
-        </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="_id"
+                style="display: none"
+                readonly
+                name="ID"
+                value=""
+              />
+            </td>
 
-        <tr>
-          <td>
-            <input
-              type="text"
-              id="txtId"
-              style="display: none"
-              readonly
-              name="ID"
-              value=""
-            />
-          </td>
+            <td>
+              <input type="text" id="_name" name="name" value="" />
+            </td>
 
-          <td>
-            <input type="text" id="txtname" name="name" value="" />
-          </td>
-
-          <td>
-            <input type="text" id="ddlRole" />
-          </td>
-          <td>
-            <input type="text" id="nme" />
-          </td>
-        </tr>
-      </table>
-
+            <td>
+              <input type="number" id="_quantity" />
+            </td>
+            <td>
+              <input type="number" id="_price" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- TABLE OF ADD PRODUCTS END -->
+      <!-- ADD BUTTON -->
       <button type="button" id="btnAdd" class="btn btn-warning">Add</button>
+      <!-- UPDATE BUTTON -->
       <button
         type="button"
         id="btnUpdate"
@@ -88,7 +102,7 @@
       </button>
 
       <br />
-
+      <!-- HERE JQUERY WILL EMBEDD NEW TABLE -->
       <div id="output"></div>
     </form>
   </body>

@@ -1,0 +1,81 @@
+body {
+  background-image: url(main_img3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100%; */
+}
+.navigation {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.123);
+  background-color: rgba(255, 228, 196, 0.441);
+}
+.navigation span {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: black;
+  text-shadow: 2px 2px 2px goldenrod;
+  margin-left: 26rem;
+}
+.addProduct {
+  display: inline-block;
+  margin-top: 6rem;
+  margin-left: 10rem;
+}
+.addProductH1 {
+  text-shadow: 2px 2px 2px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: goldenrod;
+}
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+#btnAdd {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  display: block;
+  margin-left: 33rem;
+}
+#btnUpdate {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  display: block;
+  margin-left: 33rem;
+}
+
+.addedProducts {
+  display: inline-block;
+  margin-left: 22rem;
+}
+.addedProductsH1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  margin-left: 25rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 2px black;
+}
+#A_Edit {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+  background-color: red;
+  color: white;
+  border-radius: 0.7rem;
+}
+#A_delete {
+  margin-left: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+  background-color: lightblue;
+  color: white;
+  border-radius: 0.7rem;
+}
+input {
+  border: transparent;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.105);
+}
